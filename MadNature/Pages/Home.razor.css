@@ -1,0 +1,47 @@
+﻿.image-container {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    /* Add other styles for container positioning */
+}
+
+    .image-container img {
+        display: block;
+        width: 100%; /* Ensure the image takes the full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        /* Add other image styles if required */
+    }
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Adjust positioning from the top */
+    left: 50%; /* Adjust positioning from the left */
+    transform: translate(-50%, -50%); /* Center the text relative to its container */
+    text-align: center; /* Center-align text */
+    color: white; /* Set text color */
+    /* Additional styles for the text overlay */
+}
+
+.page{
+    overflow:auto;
+}
+.about {
+    display: flex;
+}
+
+.about-photo {
+    flex: 1; /* This allows the photo to take up the available space */
+    display: flex;
+    justify-content: flex-start; /* Align content to the start (left) */
+    align-items: center; /* Center items vertically */
+}
+
+.about-text {
+    flex: 1; /* This allows the text to take up the available space */
+    display: flex;
+    justify-content: flex-start; /* Align content to the start (left) */
+    align-items: center; /* Center items vertically */
+    font-size: 16px;
+    font-family: 'Segoe Script';
+    font-weight: bold;
+}
+

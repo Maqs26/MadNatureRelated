@@ -1,0 +1,47 @@
+﻿@page "/"
+
+@using MudBlazor
+@inject ISnackbar snackbar
+
+
+<MudCarousel Class="mud-width-full" Style="height:400px; width:auto;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+	
+
+		<MudCarouselItem Transition="transition">
+ 			<div class="image-container">
+				<img src="img/JewelryHeaderImage.jpg" alt="Jewelry Header Image">
+@* 				<div class="text-overlay">
+					<h1>Welcome to Mad Nature Related! </h1>
+					<!-- Other content or elements can be added here -->
+				*@</div> @*
+			</div> *@
+		</MudCarouselItem>
+		<MudCarouselItem Transition="transition">
+			 			<div class="image-container">
+			<img src="img/flowerportraitinhand.png" alt="Jewelry Header Image">
+			</div>
+@* 			<div class="text-overlay">
+				<h1>@context </h1>
+				<!-- Other content or elements can be added here -->
+			</div> *@
+		</MudCarouselItem>
+	</MudCarousel>
+<div style="height: 400px; width: auto;">
+	<div class="about">
+		<div class="about-photo">
+			<img src="img/peoples.jpg" alt="People Image">
+		</div>
+		<div class="about-text">
+			<p>We do ALL the things!</p>
+		</div>
+	</div>
+</div>
+
+@code {
+	private bool arrows = true;
+	private bool bullets = true;
+	private bool enableSwipeGesture = true;
+	private bool autocycle = true;
+	private Transition transition = Transition.Slide;
+
+}
