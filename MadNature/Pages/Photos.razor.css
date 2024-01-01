@@ -1,0 +1,26 @@
+﻿/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with minimum width */
+    gap: 10px; /* Gap between gallery items */
+    padding: 20px; /* Optional padding around the gallery */
+}
+
+/* Gallery item styles */
+.gallery-item {
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+    /* Style the images within the gallery */
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }

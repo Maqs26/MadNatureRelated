@@ -1,13 +1,14 @@
 ﻿.image-container {
     position: relative;
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed  */
+
     /* Add other styles for container positioning */
 }
 
     .image-container img {
         display: block;
         width: 100%; /* Ensure the image takes the full width of its container */
-        height: auto; /* Maintain aspect ratio */
+        height: 600px;
         /* Add other image styles if required */
     }
 
@@ -21,18 +22,48 @@
     /* Additional styles for the text overlay */
 }
 
+
+.contact-image-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for the social media text */
+.social-media-text {
+    margin-bottom: 20px; /* Adjust spacing between text and images */
+}
+
+/* Style for the images */
+.contact-image-fb{
+    width: 100px;
+    height: 100px;
+}
+.contact-image-instagram {
+    width: 250px;
+    height: auto;
+    margin: 5px; /* Adjust margin between the images */
+}
+
+.flex-container {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    /* Additional styles if needed */
+}
+
+.right-column {
+    flex: 1;
+    /* Additional styles if needed */
+}
+
 .page{
     overflow:auto;
 }
 .about {
     display: flex;
-}
-
-.about-photo {
-    flex: 1; /* This allows the photo to take up the available space */
-    display: flex;
-    justify-content: flex-start; /* Align content to the start (left) */
-    align-items: center; /* Center items vertically */
 }
 
 .about-text {
@@ -41,7 +72,55 @@
     justify-content: flex-start; /* Align content to the start (left) */
     align-items: center; /* Center items vertically */
     font-size: 16px;
-    font-family: 'Segoe Script';
+    font-family: sans-serif;
     font-weight: bold;
 }
+    
+html {
+    scroll-behavior: smooth;
+}
 
+.about-photo {
+    width: 50%;
+    float: left; /* Ensure it takes up half the width */
+}
+
+    /* Set the image width to 100% to fill its container and adjust the height */
+    .about-photo img {
+        width: 100%;
+        height: 100%; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+    }
+
+
+.upcoming-shows {
+    text-align: center;
+    display:flex;
+    margin-top: -350px;
+    justify-content: flex-start;
+}
+
+.upcoming-shows-photo {
+    width: 500px !important;
+    height: auto !important;
+    float: right;
+    margin-left: 80px;
+}
+
+    /* Set the image width to 100% to fill its container and adjust the height */
+    .about-photo img {
+        width: 100%;
+        height: 100%; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+    }
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding-bottom: 100px; /* Space for the "Upcoming Shows" text */
+}
+
+.upcoming-shows-text {
+    justify-content: center;
+
+}

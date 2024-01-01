@@ -1,19 +1,32 @@
 ﻿@page "/photos"
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Photos</PageTitle>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+</head>
+<body>
 
-<h1>Counter</h1>
+<div class="gallery">
+    @foreach(string photo in photos)
+    {
+            <div class="gallery-item">
+                <img src=@photo alt="Image 1">
+            </div>
+            <!-- Add more gallery items as needed -->
+    }
+</div>
 
-<p role="status">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+</body>
+</html>
 
 @code {
-    private int currentCount = 0;
+    public List<string> photos = PhotoPaths.GetPhotoGalleryImages();
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+
 }
       
